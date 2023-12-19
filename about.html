@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d7972ab75d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@200;300;400;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>miracle</title>
+</head>
+<body>
+    <main>
+        <section class="about">
+            <header>
+                <a href="/" class="logo">miracle.</a>
+                <i class="fa-solid fa-bars" style="font-size: 20px;" onclick="showMenu()"></i>
+                <nav id="navLinks">
+                    <i class="fa-solid fa-xmark" style="font-size: 20px;" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="description">
+                    <h1>About Me</h1>
+                    <p>I am a full stack web developer with over 3 years of expertise and a keen sense of design, aesthetics, and user experience. I also have a strong background in front-end and back-end technologies, as well as a unique and imaginative approach to my work. As a full stack engineer, I presently work for an established IT consulting firm and a startup.</p>
+                </div>
+                <div class="skills">
+                    <h1>Skills</h1>
+                    <div class="col">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>
+                        <ul>
+                            <li>Bootstrap</li>
+                            <li>React JS</li>
+                            <li>Node JS</li>
+                        </ul>
+                        <ul>
+                            <li>Mongo DB</li>
+                            <li>Express JS</li>
+                            <li>Web Hosting</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h1>Experience</h1>
+                    <div class="experience">
+                        <ul class="exp-col">
+                            <li>Full Stack Developer</li>
+                            <li>Star Grade</li>
+                            <li>2023 - Present</li>
+                        </ul>
+                        <ul class="exp-col">
+                            <li>Full Stack Developer</li>
+                            <li>Automata Associates</li>
+                            <li>2022 - Present</li>
+                        </ul>
+                        <ul class="exp-col">
+                            <li>Full Stack Developer</li>
+                            <li>Petrosoft</li>
+                            <li>2022 - 2023</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2023</p>
+    </footer>
+
+
+
+     <!-- Javascript for toggle button -->
+     <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.visibility = "visible";
+        }
+        function hideMenu(){
+            navLinks.style.visibility = "hidden";
+        }
+
+    </script>
+</body>
+</html>

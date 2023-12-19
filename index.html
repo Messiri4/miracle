@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d7972ab75d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@200;300;400;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>miracle</title>
+</head>
+<body>
+    <main>
+        <section class="homepage">
+            <img src="bg.jpg" class="bg-img"/>
+            <header>
+                <a href="/" class="logo">miracle.</a>
+                <i class="fa-solid fa-bars" style="font-size: 20px;" onclick="showMenu()"></i>
+                <nav id="navLinks">
+                    <i class="fa-solid fa-xmark" style="font-size: 20px;" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="intro">
+                <h1>Hello, I am Miracle Messiri</h1>
+                <p>Full Stack Developer, Programmer and Designer</p>
+                <div class="social-media">
+                    <a href="https://github.com/Messiri4"><i class="fa-brands fa-square-github" style="font-size:38px; color:black; "></i></a>
+                    <a href="https://www.linkedin.com/in/miracle-messiri-5191b5212/"><i class="fa-brands fa-linkedin" style="font-size:38px;color:black;"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram" style="font-size:38px;color:black;"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Javascript for toggle button -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.visibility = "visible";
+        }
+        function hideMenu(){
+            navLinks.style.visibility = "hidden";
+        }
+
+    </script>
+</body>
+</html>

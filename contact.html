@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d7972ab75d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@200;300;400;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("WvqlydBj5bBlRkIaN");
+    })();
+    </script>
+    <title>miracle</title>
+</head>
+<body>
+    <main>
+        <section class="contact">
+            <header>
+                <a href="/" class="logo">miracle.</a>
+                <i class="fa-solid fa-bars" style="font-size: 20px;" onclick="showMenu()"></i>
+                <nav id="navLinks">
+                    <i class="fa-solid fa-xmark" style="font-size: 20px;" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="description">
+                    <h1>Contact</h1>
+                    <p>Ready to bring your vision to life or just want to chat? Reach out, and 
+                        let's create something memorable together.
+                    </p>
+                    <p>I'm here to listen, collaborate, and craft design solutions that resonate.</p>
+                </div>
+                <form id="contact-form" onSubmit="event.preventDefault(); sendMail();">
+                    <div class="input-box">
+                        <div class="input-field">
+                            <input type="text" name="name" placeholder="Your Name" id="name" required>
+                        </div>
+                        <div class="input-field">
+                            <input type="email" name="email" placeholder="Your Email" id="email" required>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" name="subject" placeholder="Your Subject" id="subject" required>
+                        </div>
+                        <div class="input-field">
+                            <textarea type="text" name="message" placeholder="Your Message" id="message" required></textarea>
+                        </div>
+                        <div class="submit">
+                            <button type="submit" id="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2023</p>
+    </footer>
+
+
+
+     <!-- Javascript for toggle button -->
+     <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.visibility = "visible";
+        }
+        function hideMenu(){
+            navLinks.style.visibility = "hidden";
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

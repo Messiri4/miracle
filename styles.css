@@ -1,0 +1,344 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Agbalumo", "Poppins", "Roboto", sans-serif;
+    background-color: black;
+}
+/* -------------HomePage----------------- */
+.homepage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.bg-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    min-height: 10vh;
+    align-items: center;
+    top: 0;
+}
+.logo{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    right: 0;
+    padding: 0 10px;
+}
+nav ul{
+    display: flex;
+    float: right;
+    list-style: none;
+}
+nav ul li{
+    padding: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+nav ul li a:hover{
+    color: #ff7f34;
+}
+.fa-bars, .fa-xmark{
+    display: none;
+}
+@media (max-width: 768px){
+    .fa-solid{
+        display: block;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    nav{
+        position: absolute;
+        width: 250px;
+        max-height: 100vh;
+        top: 430%;
+        right: 0;
+        background-color: black;
+        visibility: hidden;
+    }
+    .fa-xmark{
+        padding: 20px;
+        color: white;
+    }
+    nav ul{
+        display: block;
+        padding: 0;
+        height: 100vh;
+        float: left;
+        
+    }
+    nav ul li{
+        padding: 20px;
+    }
+    nav ul li a{
+        color: white;
+    }
+    nav ul li a:hover{
+        color: #ff7f34
+    }
+}
+.intro{
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    color: black;
+    transform: rotate(-18deg);
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 40%;
+    height: 40%;
+}
+.intro h1{
+    font-size: 55px;
+}
+.intro p{
+    font-size: 20px;
+}
+@media (max-width: 768px){
+    .intro{
+        top: 23%;
+        transform: rotate(-17deg);
+        left: 22%;
+    }
+    .intro h1{
+        font-size: 30px;
+        margin: 0;
+    }
+    .intro p{
+        font-size: 15px;
+        margin: 0;
+        padding-top: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .intro{
+        top: 28%;
+    }
+    .intro h1{
+        font-size: 20px;
+    }
+}
+/* ---------------Portfolio--------------------- */
+.portfolio{
+    width: 100%;
+    min-height: 100vh;
+}
+.container{
+    width: 100%;
+    margin: 100px 0;
+    padding: 0 20px;
+}
+.description{
+    color: white;
+    width: 50%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    word-spacing: 8px;
+}
+.description h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.description p{
+    font-size: 20px;
+}
+.works{
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: center;
+   
+}
+.projects{
+    width: 50%;
+    height: 30%;
+    position: relative;
+    margin: auto;
+    padding: 40px 0px;
+}
+.projects img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: .3s ease;
+    backface-visibility: hidden;
+}
+.overlay{
+    transition: .3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.projects:hover img{
+    opacity: 0.5;
+}
+.projects:hover .overlay{
+    opacity: 1;
+}
+.icon{
+    color: white;
+    font-size: 50px;
+    padding: 10px; 
+}
+@media (max-width:768px){
+    .projects{
+        width: 100%;
+        height: 100%;
+        padding: 50px 20px;
+    }
+    .description{
+        width: 80%;
+    }
+   
+}
+footer{
+    background-color: white;
+    width: 100%;
+    height: 8vh;
+}
+footer p{
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    padding: 15px 0;
+}
+/* ----------------ABOUT----------------- */
+.skills{
+    color: white;
+    margin: 100px auto;
+    text-align: left;
+}
+.skills h1{
+    font-size: 30px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.col{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60%;
+}
+.col ul{
+    list-style: none;
+    width: 30%;
+    padding: 0;
+}
+.col ul li{
+    font-size: 18px;
+    padding: 20px;
+}
+.experience{
+    margin-top: 30px;
+}
+.exp-col{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60%;
+    padding: 0;
+}
+.exp-col li{
+    list-style: none;
+    padding: 20px;
+    font-size: 18px;
+    width: 30%;
+}
+@media (max-width:768px){
+    .col ul{
+        padding: 0;
+    }
+    .col{
+        width: 100%;
+    }
+    .exp-col{
+        width: 100%;
+        padding: 0;
+    }
+}
+/* --------------CONTACT------------------ */
+.input-box{
+    margin: 100px auto;
+    width: 60%;
+    background-color: gray;
+    padding: 100px;
+    border-radius: 10px;
+}
+.input-field input{
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: gray;
+}
+.input-field textarea{
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+}
+::placeholder{
+    color: white;
+    font-family: "Agbalumo", "Poppins", "Roboto", sans-serif;
+}
+input:focus{
+    outline: none;
+}
+.submit{
+    text-align: right;
+    margin-top: 30px;
+}
+button{
+    padding: 15px 30px;
+    background-color: #ff7f34;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Agbalumo", "Poppins", "Roboto", sans-serif;
+    transition: .5s;
+}
+button:hover{
+    background-color: black;
+}
+@media (max-width: 768px){
+    .input-box{
+        width: 80%;
+    } 
+}
+@media (max-width: 600px){
+    .input-box{
+        width: 100%;
+    } 
+}
